@@ -1,3 +1,6 @@
+// swift-tools-version:5.3
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
 import PackageDescription
 
 let package = Package(
@@ -13,7 +16,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SalemoveSDK",
-            url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.0/SalemoveSDK.xcframework.zip",
+            url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.1/SalemoveSDK.xcframework.zip",
             checksum: "da9594c6b50119663f4f7ea1b956e059df1e4dc9552e121ee21be2e2587b0e2d"
         )
     ]
