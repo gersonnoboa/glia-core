@@ -73,11 +73,13 @@ let package = Package(
             name: "GliaCore",
             dependencies: [
                 "SalemoveSDK",
+                "Alamofire",
                 "Moya",
                 "Macaw",
                 "ReactiveSwift",
                 "SocketIO",
                 "SwiftPhoenixClient",
+                "Starscream",
                 "TwilioVoice",
                 "WebRTC"
             ]
