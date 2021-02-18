@@ -24,14 +24,14 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "SalemoveSDKZip",
+            name: "SalemoveSDK",
             url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.2/SalemoveSDK.xcframework.zip",
             checksum: "8357c3afc2456e4c07e8574d2107367d188b680309219ff5ff5ad37ee6b031e1"
         ),
         .target(
             name: "GliaCore",
             dependencies: [
-                "SalemoveSDKZip",
+                "SalemoveSDK",
                 "Moya",
                 "Macaw",
                 "ReactiveSwift",
