@@ -80,6 +80,7 @@ let package = Package(
                 "SocketIO",
                 "SwiftPhoenixClient",
                 "Starscream",
+                "SWXMLHash",
                 "TwilioVoice",
                 "WebRTC"
             ]
