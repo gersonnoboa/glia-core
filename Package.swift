@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "GliaSDK",
+    name: "Glia",
     platforms: [
         .iOS(.v12)
     ],
@@ -96,7 +96,17 @@ let package = Package(
         .target(
             name: "GliaWidgetsSDK",
             dependencies: [
-                "GliaSDK",
+                "SalemoveSDK",
+                "Alamofire",
+                "Moya",
+                "Macaw",
+                "ReactiveSwift",
+                "SocketIO",
+                "SwiftPhoenixClient",
+                "Starscream",
+                "SWXMLHash",
+                "TwilioVoice",
+                "WebRTC",
                 "GliaWidgets"
             ]
         )
