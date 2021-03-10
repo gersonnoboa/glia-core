@@ -77,6 +77,11 @@ let package = Package(
             url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.5/GliaWidgets.xcframework.zip",
             checksum: "b42719a520bc210e3d0e341a56866c9cb84c9bb6e6608c512c012a6b9dae9824"
         ),
+        .binaryTarget(
+            name: "PureLayout",
+            url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.5/PureLayout.xcframework.zip",
+            checksum: "ba40b3770921a77ed8be07836ec8b89f6d93bab623f46b54d8c2a05b74a44ef0"
+        ),
         .target(
             name: "GliaSDK",
             dependencies: [
@@ -107,7 +112,8 @@ let package = Package(
                 "SWXMLHash",
                 "TwilioVoice",
                 "WebRTC",
-                "GliaWidgets"
+                "GliaWidgets",
+                "PureLayout"
             ]
         )
     ]
