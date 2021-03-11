@@ -9,9 +9,6 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "GliaSDK",
-            targets: ["GliaSDK"]),
-        .library(
             name: "GliaWidgets",
             targets: ["GliaWidgetsSDK"]
         )
@@ -74,7 +71,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "GliaWidgets",
-            url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.5/GliaWidgets.xcframework.zip",
+            url: "https://github.com/salemove/glia-core/releases/download/1.0.5/GliaWidgets.xcframework.zip",
             checksum: "b42719a520bc210e3d0e341a56866c9cb84c9bb6e6608c512c012a6b9dae9824"
         ),
         .binaryTarget(
@@ -83,25 +80,10 @@ let package = Package(
             checksum: "ba40b3770921a77ed8be07836ec8b89f6d93bab623f46b54d8c2a05b74a44ef0"
         ),
         .target(
-            name: "GliaSDK",
-            dependencies: [
-                "SalemoveSDK",
-                "Alamofire",
-                "Moya",
-                "Macaw",
-                "ReactiveSwift",
-                "SocketIO",
-                "SwiftPhoenixClient",
-                "Starscream",
-                "SWXMLHash",
-                "TwilioVoice",
-                "WebRTC"
-            ]
-        ),
-        .target(
             name: "GliaWidgetsSDK",
             dependencies: [
                 "SalemoveSDK",
+                "GliaWidgets",
                 "Alamofire",
                 "Moya",
                 "Macaw",
@@ -112,7 +94,6 @@ let package = Package(
                 "SWXMLHash",
                 "TwilioVoice",
                 "WebRTC",
-                "GliaWidgets",
                 "PureLayout"
             ]
         )
