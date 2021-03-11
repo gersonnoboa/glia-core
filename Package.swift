@@ -96,15 +96,6 @@ let package = Package(
                 "TwilioVoice",
                 "WebRTC",
                 "PureLayout"
-            ],
-            path: "GliaWidgets",
-            exclude: ["Info.plist"],
-            resources: [
-                .process("Resources/Font/Roboto-Bold.ttf"),
-                .process("Resources/Font/Roboto-Medium.ttf"),
-                .process("Resources/Font/Roboto-Regular.ttf"),
-                .process("Cartfile"),
-                .process("Cartfile.resolved")
             ]
         )
     ]
