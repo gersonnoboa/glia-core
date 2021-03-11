@@ -71,7 +71,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "GliaWidgets",
-            url: "https://github.com/salemove/glia-core/releases/download/1.0.5/GliaWidgets.xcframework.zip",
+            url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.5/GliaWidgets.xcframework.zip",
             checksum: "b42719a520bc210e3d0e341a56866c9cb84c9bb6e6608c512c012a6b9dae9824"
         ),
         .binaryTarget(
