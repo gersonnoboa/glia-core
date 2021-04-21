@@ -59,8 +59,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "SalemoveSDK",
-            url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.13/SalemoveSDK.xcframework.zip",
-            checksum: "f15d50cb4d7407b8c2895d7f5d7fc75a9f4e8d31d7eff7a0b54f85682cec2d7b"
+            url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.14/SalemoveSDK.xcframework.zip",
+            checksum: "8362fc29353e302a9332c3b958c2e1a87247741b51f07359b9b8326ff29ac5a1"
         ),
         .target(
             name: "SalemoveSDKTarget",
