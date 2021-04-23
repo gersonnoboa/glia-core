@@ -60,9 +60,7 @@ let package = Package(
                 "ReactiveSwift",
                 "SocketIO",
                 "SwiftPhoenixClient",
-                "SWXMLHash",
-                "TwilioVoice",
-                "WebRTC"
+                "SWXMLHash"
             ]
         )
     ]
