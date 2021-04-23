@@ -44,23 +44,12 @@ let package = Package(
             name: "SWXMLHash",
             url: "https://github.com/drmohundro/SWXMLHash.git",
             .upToNextMajor(from: "5.0.0")
-        ),
-        .package(
-            name: "TwilioVoice",
-            url: "https://github.com/twilio/twilio-voice-ios.git",
-            .upToNextMajor(from: "5.5.2")
         )
     ],
     targets: [
         .binaryTarget(
-            name: "WebRTC",
-            url: "https://github.com/salemove/ios-bundle/releases/download/0.27.0/WebRTC.xcframework.zip",
-            checksum: "996f02aff0f0ade1a16f0d8798150e58a126934ebdfd20610421931bfa459859"
-        ),
-        .binaryTarget(
             name: "SalemoveSDK",
-            url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.14/SalemoveSDK.xcframework.zip",
-            checksum: "8362fc29353e302a9332c3b958c2e1a87247741b51f07359b9b8326ff29ac5a1"
+            path: "SalemoveSDK.xcframework"
         ),
         .target(
             name: "SalemoveSDKTarget",
