@@ -44,13 +44,23 @@ let package = Package(
             name: "SWXMLHash",
             url: "https://github.com/drmohundro/SWXMLHash.git",
             .upToNextMajor(from: "5.0.0")
+        ),
+        .package(
+            name: "TwilioVoice",
+            url: "https://github.com/gersonnoboa/twilio-voice-ios.git",
+            .upToNextMajor(from: "1.0.0")
+        ),
+        .package(
+            name: "WebRTC",
+            url: "https://github.com/gersonnoboa/spm-test.git",
+            .upToNextMajor(from: "1.0.4")
         )
     ],
     targets: [
         .binaryTarget(
             name: "SalemoveSDK",
-            url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.14/SalemoveSDK.xcframework.zip",
-            checksum: "8362fc29353e302a9332c3b958c2e1a87247741b51f07359b9b8326ff29ac5a1"
+            url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.18/SalemoveSDK.xcframework.zip",
+            checksum: "bbb44b623b3b4c022699a7661f659fdca128ad8aa1dcccca12a6b061324f7d05"
         ),
         .target(
             name: "SalemoveSDKTarget",
@@ -61,7 +71,9 @@ let package = Package(
                 "ReactiveSwift",
                 "SocketIO",
                 "SwiftPhoenixClient",
-                "SWXMLHash"
+                "SWXMLHash",
+                "TwilioVoice",
+                "WebRTC"
             ]
         )
     ]
