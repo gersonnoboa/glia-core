@@ -47,8 +47,8 @@ let package = Package(
         ),
         .package(
             name: "TwilioVoice",
-            url: "https://github.com/gersonnoboa/twilio-voice-ios.git",
-            .upToNextMajor(from: "1.0.0")
+            url: "https://github.com/twilio/twilio-voice-ios",
+            .upToNextMajor(from: "6.3.0")
         ),
         .package(
             name: "WebRTC",
@@ -59,8 +59,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SalemoveSDK",
-            url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.21/SalemoveSDK.xcframework.zip",
-            checksum: "b1ecd0229ee7c364f588952bc4b1448b0eee44b7d2893cb90b93897a5ce13689"
+            url: "https://github.com/gersonnoboa/glia-core/releases/download/1.0.22/SalemoveSDK.xcframework.zip",
+            checksum: "6cf37c448665b3b850bf82a42db17e91de15cf0597216bf187aec0ecdcd9aea1"
         ),
         .target(
             name: "SalemoveSDKTarget",
