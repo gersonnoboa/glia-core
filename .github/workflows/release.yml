@@ -1,0 +1,24 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version_increase_type:
+        description: 'Type of version increase. Can be `major`, `minor`, or `patch`.'
+        required: true
+        default: 'minor'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Environment setup
+        env: 
+          BITRISE_APP_ID: ${{ secrets.BITRISE_APP_ID }}
+          BITRISE_BUILD_TRIGGER_TOKEN: ${{ secrets.BITRISE_BUILD_TRIGGER_TOKEN }}
+      - name: Run a multi-line script
+        run: |
+          curl https://app.bitrise.io/app/$BITRISE_APP_ID/build/start.json --data '{"hook_info":{"type":"bitrise","build_trigger_token":"$BITRISE_BUILD_TRIGGER_TOKEN"},"build_params":{"branch":"master","workflow_id":"test"},"triggered_by":"curl"}'
