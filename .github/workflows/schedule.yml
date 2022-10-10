@@ -25,7 +25,7 @@ jobs:
 
           GITHUB_RELEASE_TAG=$(curl \
             -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer $GITHUB_API_TOKEN" \
+            -H "Authorization: Bearer $API_TOKEN_GITHUB" \
             https://api.github.com/repos/gersonnoboa/glia-core/releases?per_page=1 \
             | jq -r '.[0].tag_name'
           )
@@ -38,7 +38,7 @@ jobs:
             curl \
               -X PUT \
               -H "Accept: application/vnd.github+json" \
-              -H "Authorization: Bearer $GITHUB_API_TOKEN" \
+              -H "Authorization: Bearer $API_TOKEN_GITHUB" \
               https://api.github.com/repos/gersonnoboa/glia-core/actions/workflows/schedule.yml/enable
           else
             echo "Not equal"
