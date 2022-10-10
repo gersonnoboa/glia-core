@@ -39,7 +39,7 @@ jobs:
               -X PUT \
               -H "Accept: application/vnd.github+json" \
               -H "Authorization: Bearer ${{ secrets.API_TOKEN_GITHUB }}" \
-              https://api.github.com/repos/gersonnoboa/glia-core/actions/workflows/schedule.yml/enable
+              https://api.github.com/repos/gersonnoboa/glia-core/actions/workflows/schedule.yml/disable
           else
             echo "Not equal"
           fi
