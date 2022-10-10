@@ -6,7 +6,11 @@ name: Schedule
 on:
   schedule:
     - cron: '*/10 * * * *'
-
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version in semantic versioning format (i.e. 1.0.2)'
+        required: true
 jobs:
   run:
     runs-on: ubuntu-latest
