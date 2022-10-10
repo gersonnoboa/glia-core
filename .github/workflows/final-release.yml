@@ -22,5 +22,5 @@ jobs:
           curl \
             -X PUT \
             -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${{ $secrets.API_TOKEN_GITHUB }}" \
+            -H "Authorization: Bearer ${{ secrets.API_TOKEN_GITHUB }}" \
             https://api.github.com/repos/gersonnoboa/glia-core/actions/workflows/schedule.yml/enable
